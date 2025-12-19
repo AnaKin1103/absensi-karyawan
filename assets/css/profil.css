@@ -1,0 +1,344 @@
+/* ========================================
+   PROFIL PAGE STYLES
+   ======================================== */
+
+/* Page Header */
+.page-header {
+    margin-bottom: 30px;
+}
+
+.page-header .header-content h3 {
+    margin: 0 0 5px 0;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+.page-header .subtitle {
+    margin: 0;
+    color: #7f8c8d;
+    font-size: 1rem;
+}
+
+/* Profile Layout */
+.profile-layout {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Profile Card - Left Side */
+.profile-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    height: fit-content;
+    position: sticky;
+    top: 20px;
+}
+
+.profile-photo {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #f0f0f0;
+    margin-bottom: 20px;
+}
+
+.profile-photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #f0f0f0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.profile-photo img:hover {
+    transform: scale(1.05);
+}
+
+.profile-photo h3 {
+    margin: 0 0 5px 0;
+    color: #2c3e50;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.profile-photo p {
+    margin: 0 0 12px 0;
+    color: #7f8c8d;
+    font-size: 0.95rem;
+}
+
+.profile-badge {
+    display: inline-block;
+    padding: 8px 16px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    box-shadow: 0 2px 10px rgba(102, 126, 234, 0.3);
+}
+
+/* Profile Stats */
+.profile-stats {
+    margin-top: 20px;
+}
+
+.profile-stats .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 0.9rem;
+}
+
+.profile-stats .item:last-child {
+    border-bottom: none;
+}
+
+.profile-stats .label {
+    color: #7f8c8d;
+    font-weight: 500;
+}
+
+.profile-stats .value {
+    color: #2c3e50;
+    font-weight: 700;
+    text-align: right;
+}
+
+/* Profile Form Card - Right Side */
+.profile-form-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+}
+
+.form-section-title {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #2c3e50;
+    border-left: 4px solid #667eea;
+    padding-left: 12px;
+}
+
+/* Form Elements */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #2c3e50;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.form-control[readonly] {
+    background: #f8f9fa;
+    cursor: not-allowed;
+    color: #6c757d;
+}
+
+.form-control[type="file"] {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.form-text {
+    font-size: 0.8rem;
+    color: #7f8c8d;
+    margin-top: 5px;
+    display: block;
+}
+
+/* Form Buttons */
+.form-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.btn-outline {
+    background: white;
+    color: #667eea;
+    border: 2px solid #667eea;
+}
+
+.btn-outline:hover {
+    background: #667eea;
+    color: white;
+}
+
+/* Alert Messages */
+.alert {
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    animation: slideDown 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.alert-success {
+    background: #d4edda;
+    color: #155724;
+    border-left: 4px solid #28a745;
+}
+
+.alert-error {
+    background: #f8d7da;
+    color: #721c24;
+    border-left: 4px solid #dc3545;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .profile-layout {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .profile-card {
+        position: relative;
+        top: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-header .header-content h3 {
+        font-size: 1.5rem;
+    }
+    
+    .profile-card,
+    .profile-form-card {
+        padding: 20px;
+    }
+    
+    .profile-photo img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .profile-photo h3 {
+        font-size: 1.2rem;
+    }
+    
+    .form-buttons {
+        flex-direction: column;
+    }
+    
+    .btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-card,
+    .profile-form-card {
+        padding: 15px;
+    }
+    
+    .profile-photo img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .profile-stats .item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+    .profile-stats .value {
+        text-align: left;
+    }
+}
+
+/* Additional Styling */
+hr {
+    border: none;
+    border-top: 1px dashed #e0e0e0;
+    margin: 25px 0;
+}
+
+/* Input File Custom Styling */
+input[type="file"]::file-selector-button {
+    padding: 8px 16px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+input[type="file"]::file-selector-button:hover {
+    background: #764ba2;
+}

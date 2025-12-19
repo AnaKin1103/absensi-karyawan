@@ -1,0 +1,172 @@
+.checkin-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .camera-container {
+            background: #000;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            position: relative;
+            min-height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        #camera {
+            width: 100%;
+            height: auto;
+            display: none;
+        }
+        
+        #canvas {
+            display: none;
+        }
+        
+        #preview {
+            width: 100%;
+            height: auto;
+            display: none;
+        }
+        
+        .camera-placeholder {
+            color: white;
+            text-align: center;
+            padding: 40px;
+        }
+        
+        .camera-controls {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            justify-content: center;
+        }
+        
+        .info-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .info-box h3 {
+            margin: 0 0 10px 0;
+            font-size: 1.5rem;
+        }
+        
+        .info-box .time {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin: 10px 0;
+        }
+        
+        .info-box .date {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .location-info {
+            background: #e3f2fd;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 4px solid #2196f3;
+        }
+        
+        .location-info.error {
+            background: #ffebee;
+            border-left-color: #f44336;
+        }
+        
+        .location-info.success {
+            background: #e8f5e9;
+            border-left-color: #4caf50;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            transition: all 0.3s;
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+        
+        textarea.form-control {
+            resize: vertical;
+            min-height: 100px;
+        }
+        
+        .alert {
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+        
+        .alert-warning {
+            background: #fff3cd;
+            color: #856404;
+            border-left: 4px solid #ffc107;
+        }
+        
+        .alert-success {
+            background: #d4edda;
+            color: #155724;
+            border-left: 4px solid #28a745;
+        }
+        
+        .alert-error {
+            background: #f8d7da;
+            color: #721c24;
+            border-left: 4px solid #dc3545;
+        }
+        
+        .btn-capture {
+            background: #4caf50;
+            color: white;
+        }
+        
+        .btn-capture:hover {
+            background: #45a049;
+        }
+        
+        .btn-retake {
+            background: #ff9800;
+            color: white;
+        }
+        
+        .btn-retake:hover {
+            background: #f57c00;
+        }
+        
+        @media (max-width: 768px) {
+            .checkin-container {
+                padding: 15px;
+            }
+            
+            .info-box .time {
+                font-size: 2rem;
+            }
+        }
